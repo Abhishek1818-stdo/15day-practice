@@ -1,0 +1,17 @@
+#Task A
+#first  non repeating character
+
+def non_repeating():
+    freq = {}
+    text = "aabcdef"
+ 
+    for char in text:
+        if char in freq:
+            freq[char] += 1
+        else:
+            freq[char] = 1
+
+    for char in text:
+        if freq[char] == 1: 
+            return char
+    print(non_repeating())              
